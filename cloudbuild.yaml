@@ -51,8 +51,6 @@ steps:
       echo ""
       cd environments/prod
       terraform plan
-      echo ""
-      echo "*************************************************"
 # [END tf-plan]
 
 # # [START tf-apply]
