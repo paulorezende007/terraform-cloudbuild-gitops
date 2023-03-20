@@ -35,8 +35,6 @@ steps:
       echo ""
       cd environments/prod
       terraform init
-      echo ""
-      echo "*************************************************"
 
 
 # [START tf-plan]
