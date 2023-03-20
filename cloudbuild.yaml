@@ -61,7 +61,7 @@ steps:
       echo ""
       echo "***************** TERRAFORM APPLY ******************"
       echo ""
-      if [ $BRANCH_NAME="main" ]; then
+      if [ $BRANCH_NAME -eq "teste1" ]; then
         cd environments/$BRANCH_NAME      
         terraform apply -auto-approve
       else
