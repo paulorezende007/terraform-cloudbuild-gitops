@@ -13,21 +13,21 @@
 # limitations under the License.
 
 
-module "vpc" {
-  source  = "../../modules/vpc"
-  project = "${var.project}"
-  env     = "${var.env}"
-  depends_on = [google_project_service.gcp_services]
-}
+# module "vpc" {
+#   source  = "../../modules/vpc"
+#   project = "${var.project}"
+#   env     = "${var.env}"
+#   depends_on = [google_project_service.gcp_services]
+# }
 
-module "http_server" {
-  source  = "../../modules/http_server"
-  project = "${var.project}"
-  subnet  = "${module.vpc.subnet}"
-}
+# module "http_server" {
+#   source  = "../../modules/http_server"
+#   project = "${var.project}"
+#   subnet  = "${module.vpc.subnet}"
+# }
 
-module "firewall" {
-  source  = "../../modules/firewall"
-  project = "${var.project}"
-  subnet  = "${module.vpc.subnet}"
-}
+# module "firewall" {
+#   source  = "../../modules/firewall"
+#   project = "${var.project}"
+#   subnet  = "${module.vpc.subnet}"
+# }
