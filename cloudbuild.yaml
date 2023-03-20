@@ -45,7 +45,7 @@ steps:
   - '-c'
   - | 
       echo ""
-      echo "**************** TERRAFORM PLAN ******************"
+      echo "***************** TERRAFORM PLAN ******************"
       echo ""
       cd environments/prod
       terraform plan
