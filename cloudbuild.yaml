@@ -12,6 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+substitutions:
+  _REGION: ""
+  _DIR: ""
+  _BUCKET_LOGS: ""
+  _ENV: ""
+
+# Habilitando Logs para Service Account Custom
+logsBucket: 'gs://$_BUCKET_LOGS'
+options:
+  logging: GCS_ONLY #CLOUD_LOGGING_ONLY
 
 steps:
 - id: 'branch name'
