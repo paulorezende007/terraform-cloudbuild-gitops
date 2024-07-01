@@ -14,7 +14,7 @@
 
 substitutions:
   _DIR: ""
-  _BUCKET_LOGS: "bucket-logs-cloudbuild"
+  _BUCKET_LOGS: ""
   _ENV: ""
 
 # Habilitando Logs para Service Account Custom
