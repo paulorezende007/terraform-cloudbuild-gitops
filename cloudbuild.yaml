@@ -13,7 +13,6 @@
 # limitations under the License.
 
 substitutions:
-  _REGION: ""
   _DIR: ""
   _BUCKET_LOGS: "bucket-logs-cloudbuild"
   _ENV: ""
