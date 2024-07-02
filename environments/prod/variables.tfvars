@@ -1,0 +1,7 @@
+project        = "labs-paulorezende2"
+project_id     = "testes-paulo"
+project_number = "492833194159"
+region         = "us-central1"
+zone           = "us-central1-a"
+prefix         = "app"
+env            = "stg"
