@@ -2,17 +2,17 @@
 variable "project" {
   description = "The name of the project"
   type        = string
-  default     = "prj-iac-pipelines"
+  default     = "labs-paulorezende2"
 }
 variable "project_id" {
   description = "The Project ID of the project"
   type        = string
-  default     = "prj-iac-pipelines"
+  default     = "testes-paulo"
 }
 variable "project_number" {
   description = "The Project Number of the project"
   type        = string
-  default     = "45905381382"
+  default     = "492833194159"
 }
 variable "region" {
   type        = string
