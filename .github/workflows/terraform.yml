@@ -102,6 +102,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
+      if: github.event_name == 'pull_request'
       run: terraform plan -input=false
 
       # On push to "main", build or change infrastructure according to Terraform configuration files

@@ -26,8 +26,8 @@ module "http_server" {
   subnet  = module.vpc.subnet
 }
 
-module "firewall" {
-  source  = "../../modules/firewall"
-  project = var.project_id
-  subnet  = module.vpc.subnet
-}
+# module "firewall" {
+#   source  = "../../modules/firewall"
+#   project = var.project_id
+#   subnet  = module.vpc.subnet
+# }
