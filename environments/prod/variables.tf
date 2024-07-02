@@ -2,17 +2,14 @@
 variable "project" {
   description = "The name of the project"
   type        = string
-  default     = "labs-paulorezende2"
 }
 variable "project_id" {
   description = "The Project ID of the project"
   type        = string
-  default     = "testes-paulo"
 }
 variable "project_number" {
   description = "The Project Number of the project"
   type        = string
-  default     = "492833194159"
 }
 variable "region" {
   type        = string
@@ -32,5 +29,5 @@ variable "prefix" {
 variable "env" {
   description = "Ambiente dos recursos"
   type        = string
-  default     = "prd"
+  default     = "dev"
 }
