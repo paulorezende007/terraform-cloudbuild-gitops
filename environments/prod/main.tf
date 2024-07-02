@@ -11,14 +11,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-
-# module "vpc" {
-#   source  = "../../modules/vpc"
-#   project = "${var.project}"
-#   env     = "${var.env}"
-#   depends_on = [google_project_service.gcp_services]
-# }
+module "vpc" {
+  source     = "../../modules/vpc"
+  project    = var.project
+  env        = var.env
+  depends_on = [google_project_service.gcp_services]
+}
 
 # module "http_server" {
 #   source  = "../../modules/http_server"

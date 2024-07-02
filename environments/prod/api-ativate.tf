@@ -4,15 +4,15 @@
 
 
 variable "gcp_service_list" {
-  description ="The list of apis necessary for the project"
-  type = list(string)
+  description = "The list of apis necessary for the project"
+  type        = list(string)
   default = [
-    "cloudresourcemanager.googleapis.com",//Resource Maneger
-    "servicenetworking.googleapis.com",//Service Networking
-    "compute.googleapis.com",//Compute Engine
-    "serviceusage.googleapis.com",//
-    "iam.googleapis.com",//Identity and Access Management (IAM)
-    "cloudbuild.googleapis.com",//Cloud Build
+    "cloudresourcemanager.googleapis.com", //Resource Maneger
+    "servicenetworking.googleapis.com",    //Service Networking
+    "compute.googleapis.com",              //Compute Engine
+    "serviceusage.googleapis.com",         //
+    "iam.googleapis.com",                  //Identity and Access Management (IAM)
+    "cloudbuild.googleapis.com",           //Cloud Build
     //"container.googleapis.com",//GKE
     //"iap.googleapis.com",//IAP
     //"run.googleapis.com",//Cloud Run
@@ -27,8 +27,8 @@ variable "gcp_service_list" {
 }
 
 resource "google_project_service" "gcp_services" {
-  for_each = toset(var.gcp_service_list)
-  project = var.project_id
-  service = each.key
+  for_each           = toset(var.gcp_service_list)
+  project            = var.project_id
+  service            = each.key
   disable_on_destroy = false
 }

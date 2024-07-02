@@ -8,8 +8,8 @@ terraform {
   required_version = ">= 1.2"
 
   backend "gcs" {
-    bucket  = "bucket-terraform-state-qinetwork" # Bucket default para terraform state qi network
-    prefix  = "terraform-state/prj-iac-pipelines.tfstate" # Coloque aqui o nome de seu projeto/state que deve ser unico
+    bucket = "bucket-terraform-state-qinetwork"          # Bucket default para terraform state qi network
+    prefix = "terraform-state/prj-iac-pipelines.tfstate" # Coloque aqui o nome de seu projeto/state que deve ser unico
   }
 
   required_providers {
