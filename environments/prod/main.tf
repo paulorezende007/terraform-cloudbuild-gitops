@@ -14,9 +14,9 @@
 #
 
 module "vpc" {
-  source  = "../../modules/vpc"
-  project = "${var.project}"
-  env     = "${var.env}"
+  source     = "../../modules/vpc"
+  project    = var.project
+  env        = var.env
   depends_on = [google_project_service.gcp_services]
 }
 
